@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"> 
+</script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="desktop.css">
     
@@ -17,7 +19,7 @@
 </head>
 
 <body id="home">
-    <header class="header">
+    <header id="header" class="header">
         <nav class="nav">
             <ul>
                 <li>
@@ -57,12 +59,14 @@
         </div>
     </div>
 
-    <div id="reasons" class="bg-fixed">
+    <div id="reasons" class="scroll-fix bg-fixed">
+        
         <h1>Why Sapien?</h1>
+        
         <div class="reason-1">
-            <div class="fa fa-university fa-4x"></div>
-            <h3>Advance your education, kick start your career</h3>
-            <p>Tutoring is a grueling process by most organizations, but with us, it will feel like a friend is helping you succeed.
+            <div class="fa fa-money fa-4x"></div>
+            <h3>We are inexpensive</h3>
+            <p>Professional tutors charge ridiculous amounts of money for a single session. But with us, we dont overcharge. Our prices are in a range of "Wow, all of that for that little?"
             </p>
         </div>
         
@@ -82,15 +86,10 @@
         
         <div class="reason-4">
             <div class="fa fa-child fa-4x"></div>
+            <div class="fa fa-child fa-4x"></div>
+            <div class="fa fa-child fa-4x"></div>
             <h3>Tutors from different skill sets</h3>
             <p>Each one of our tutors excels in their own niche. We have all core subjects with respective tutors and extra ones for the more diverse.
-            </p>
-        </div>
-        
-        <div class="reason-5">
-            <div class="fa fa-money fa-4x"></div>
-            <h3>We are inexpensive</h3>
-            <p>Professional tutors charge ridiculous amounts of money for a single session. But with us, we dont overcharge. Our prices are in a range of "Wow, all of that for that little?"
             </p>
         </div>
     </div>
@@ -143,9 +142,13 @@
     <div id="contact"> 
         <h1>Have questions?</h1>
         <h2>Contact Us!</h2>
-        <a href="#" target="_blank" title="Email"><i class="fa fa-envelope-o fa-3x"></i></a>
+        <a href="mailto:sapientutoring@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope-o fa-2x"></i></a>
         <h4>Or visit our <a href="#">FAQ</a> page!</h4>
         
     </div>
 </body>
+
+    <script type="text/javascript" src="scroll.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
+
 </html>
