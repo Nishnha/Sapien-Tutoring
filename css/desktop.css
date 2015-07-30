@@ -1,0 +1,494 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    zoom: 1;
+    text-align: center;
+    color: #212121;
+    font: normal 20px "Josefin Slab" "Poly" georgia serif;
+    line-height:1.6;
+    margin: 0 auto;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3d3536;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.bg-fixed {
+    height: calc(100vh - 70px);
+}
+
+/* ------------------------------------- */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+}
+
+.header.past-home {
+    background-color: white;
+    border-bottom: solid 1px #ddd;
+}
+
+.nav {
+    width: auto;
+    float: right;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.nav ul li {
+    line-height: 70px;
+    display: inline;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+.nav ul li a {
+    padding: .6em 1em;
+}
+
+/* ------------------------------------- */
+
+#cover {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding-top: 70px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/res/bg-tutoring-sm.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+    color: white;
+}
+
+#cover h1 {
+    padding-top: 18px;
+}
+
+#cover h3 {
+    padding-bottom: 1em;
+}
+
+#cover .group .fa, #cover .regular .fa {
+    color: white;
+}
+
+#cover .group:hover > .fa, #cover .regular:hover > .fa {
+    color: black;
+}
+
+#programs .group, #programs .regular {
+    background-color: #ddd;
+    width: 250px;
+    padding: 50px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#programs .group:hover, #programs .regular:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+#reasons {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    margin: 0 auto;
+    background-color: #f3f3f3;
+}
+
+#reasons h1 {
+    padding-top: 25px;
+    margin-bottom: 0;
+}
+
+.reason-1, .reason-2, .reason-3, .reason-4, .reason-5 {
+    width: 33%;
+    display: inline-block;
+    padding: 50px;
+}
+
+#reasons .fa-university {
+    color: #e39d4b;
+}
+
+#reasons .fa-graduation-cap {
+    color: blue;
+}
+
+#reasons .fa-home {
+    color: #ef8181;
+}
+
+#reasons .fa-child {
+    color: #6fb8f8;
+    display: inline;
+}
+
+#reasons .fa-money {
+    color: #168e16;
+}
+
+/* ------------------------------------- */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+       -o-transition: .6s ease-in-out left;
+          transition: .6s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control:hover,
+.carousel-control:active {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  display: inline-block;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  font-family: serif;
+  line-height: 1;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 4;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -15px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -15px;
+  }
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+
+/* ------------------------------------- */
+
+.carousel, .item, .active {
+    height: calc(100vh - 70px);
+}
+
+.carousel-caption {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    left: 40%;
+    padding: 20px;
+}
+
+.carousel-caption h1 {
+    color: white;
+    text-align: bottom;
+    margin-bottom: 0;
+}
+
+#meet {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/res/bg-pencils-sm.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
+#meet .carousel-caption {
+    background: none;
+    left: 15%;
+}
+
+@-webkit-keyframes arrow {
+    0% {right: 0px;}
+    50% {right: 10px;}
+    100% {right: 0px;}
+}
+@keyframes arrow {
+    0% {right: 0px;}
+    50% {right: 10px;}
+    100% {right: 0px;}
+}
+
+#meet .carousel-caption:hover {
+    cursor: pointer;
+    -webkit-animation-name: arrow;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    margin-right: 15%
+}
+
+#alice {
+    background: linear-gradient( rgba(255, 55, 217, 0.2), rgba(255, 55, 217, 0.2) ), url(/res/bg-alice.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
+#vineel {
+    background: linear-gradient( rgba(217, 108, 108, 0.2), rgba(217, 108, 108, 0.2) ), url(/res/bg-vineel.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
+#alex {
+    background: linear-gradient( rgba(67, 206, 174, 0.2), rgba(67, 206, 174, 0.2) ), url(/res/bg-tea-sm.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
+#nish {
+    background: linear-gradient( rgba(135, 172, 92, 0.2), rgba(135, 172, 92, 0.2) ), url(/res/bg-nish.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
+#akhil {
+    background: linear-gradient( rgba(245, 217, 60, 0.2), rgba(245, 217, 60, 0.2) ), url(/res/bg-akhil.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
+#joseph {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(/res/bg-joseph.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+}
+
+.diamond {
+    -ms-transform: translateY(-50%) rotate(45deg);
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    height: 300px;
+    width: 300px;
+    border: solid 2px #fff;
+    position: relative;
+    left: 15%;
+    top: 50%;
+    bottom: initial;
+    overflow: hidden;
+}
+
+.animated {
+    width: 300px;
+    height: 300px;
+    animation-delay: 0.5s;
+}
+
+/* ------------------------------------- */
+
+#contact {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+#contact h1 {
+    padding-top: 20px;
+}
+
+#contact h4 {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+#contact h4 a {
+    color: #4c4cde;
+}
