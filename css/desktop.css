@@ -73,7 +73,7 @@ ul {
     width: 100%;
     min-height: calc(100vh - 70px);
     padding-top: 70px;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/res/bg-tutoring-sm.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(bg-tutoring-sm.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -371,7 +371,7 @@ ul {
 }
 
 #meet {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/res/bg-pencils-sm.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(bg-pencils-sm.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -406,7 +406,7 @@ ul {
 }
 
 #alice {
-    background: linear-gradient( rgba(255, 55, 217, 0.2), rgba(255, 55, 217, 0.2) ), url(/res/bg-alice.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(255, 55, 217, 0.2), rgba(255, 55, 217, 0.2) ), url(bg-alice.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -414,7 +414,7 @@ ul {
 }
 
 #vineel {
-    background: linear-gradient( rgba(217, 108, 108, 0.2), rgba(217, 108, 108, 0.2) ), url(/res/bg-vineel.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(217, 108, 108, 0.2), rgba(217, 108, 108, 0.2) ), url(bg-vineel.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -422,7 +422,7 @@ ul {
 }
 
 #alex {
-    background: linear-gradient( rgba(67, 206, 174, 0.2), rgba(67, 206, 174, 0.2) ), url(/res/bg-tea-sm.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(67, 206, 174, 0.2), rgba(67, 206, 174, 0.2) ), url(bg-tea-sm.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -430,7 +430,7 @@ ul {
 }
 
 #nish {
-    background: linear-gradient( rgba(135, 172, 92, 0.2), rgba(135, 172, 92, 0.2) ), url(/res/bg-nish.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(135, 172, 92, 0.2), rgba(135, 172, 92, 0.2) ), url(bg-nish.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -438,7 +438,7 @@ ul {
 }
 
 #akhil {
-    background: linear-gradient( rgba(245, 217, 60, 0.2), rgba(245, 217, 60, 0.2) ), url(/res/bg-akhil.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(245, 217, 60, 0.2), rgba(245, 217, 60, 0.2) ), url(bg-akhil.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -446,7 +446,7 @@ ul {
 }
 
 #joseph {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(/res/bg-joseph.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(bg-joseph.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
